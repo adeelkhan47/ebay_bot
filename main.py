@@ -82,7 +82,7 @@ def get_ebay_store_items(store_name):
 
 
 if __name__ == '__main__':
-    store_name = "axiomtest,axiomtest"
+    store_name = "equiptek_labs,axiomtest"
     for each in store_name.split(","):
-        status = get_ebay_store_items(store_name)
+        status = get_ebay_store_items(each)
         print(f"{each} : Processed => {status}")
