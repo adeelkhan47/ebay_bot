@@ -82,6 +82,7 @@ def get_ebay_store_items(store_name):
 
 
 if __name__ == '__main__':
-    store_name = "axiomtest"
-    status = get_ebay_store_items(store_name)
-    print(f"Processed : {status}")
+    store_name = "axiomtest,axiomtest"
+    for each in store_name.split(","):
+        status = get_ebay_store_items(store_name)
+        print(f"{each} : Processed => {status}")
