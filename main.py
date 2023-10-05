@@ -29,8 +29,8 @@ def open_window(url, description, price, link, image_url, all_products):
             quantity = quantity_count
 
     except Exception as e:
-        total_price = "N/A"
-        quantity = "N/A"
+        total_price = price
+        quantity = "1"
         print("Quantity not found. ")
     fetched_item = {
         'Title': description,
